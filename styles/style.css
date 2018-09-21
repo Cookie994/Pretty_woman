@@ -1,0 +1,73 @@
+.navbar-nav > li {
+    margin: 2px 30px;
+    font: italic 20px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.nav a:hover, .nav a:active {
+    color: #ffccff !important;
+    text-decoration: none !important;
+}
+
+#submit, #fbLink {
+    color: #ff99ff !important;
+    text-decoration: none !important;
+}
+
+input[type=text], #msg {
+    border: none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    background-color: #f9f1eb
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+a.fa:hover, #submit:hover, a.#fbLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa:hover, #submit:hover, #fbLink:hover {
+    opacity: 0.5;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+    color: black;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#colapseNav {
+    z-index: 2;
+}
+
+h1, h3, h5 {
+    font: italic 40px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+p, ul, li {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.thankYou {
+    color: #e8c8b0;
+}
