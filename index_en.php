@@ -40,20 +40,20 @@
            </div>
        </div>
     </div>
+    <!--Header Img -->
    <div class="container-fluid my-5 pt-2" id="headImg">
-   <!--Header Img -->
-    <div class="row justify-content-center my-5 pb-5">
-        <div class="col-md-12 text-center">
-            <img src="img/head-img.jpg" alt="hairstyle" class="img-fluid mt-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 text-center">
+                <img src="img/head-img.jpg" alt="hairstyle" class="img-fluid mt-5">
+            </div>
         </div>
-    </div>
     </div>
     <div class="container">
         <!-- About -->
-        <div class="my-5 py-5" id="about" style="background-color: #f9f1eb">
-            <div class="row justify-content-center mt-4">
+        <div class="my-5 py-5" style="background-color: #f9f1eb">
+            <div class="row justify-content-center mt-4 mb-5">
                <div class="col-md-12 text-center mb-3">
-                    <h1>About Us</h1>
+                    <h1 id="about">About Us</h1>
                </div>
                 <div class="col-md-5 text-center mr-md-3">
                     <img src="img/about_us.jpg" alt="tools" class="img-fluid mb-4">
@@ -64,10 +64,10 @@
             </div>
         </div>
         <!-- Services frizure-->
-        <div id="frizure" class="my-5 py-5">
-            <div class="row justify-content-center pt-5 mt-5 pb-4">
+        <div class="my-5 py-5">
+            <div class="row justify-content-center pb-4">
                <div class="col-xl-5 text-center mr-xl-3">
-                  <h1 class="my-3">Hairdressing services</h1>
+                  <h1 class="my-3" id="frizure">Hairdressing services</h1>
                    <p class="mb-4">At <em>Pretty Woman</em> salon we offer a range of services which could satisfy your hairdressing needs. Whether you require a fabulous hair for a special occasion, hair coloring or you just feel like gettting a simple trim, <em>Pretty Woman</em> is the right place for you.</p>
                 </div>
                <div class="col-xl-6 ml-xl-3">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center" style="background-color: #f9f1eb">
+            <div class="row justify-content-center mb-5" style="background-color: #f9f1eb">
                 <div id="slider" class="carousel slide col-md-8" data-ride="carousel">
                   <ul class="carousel-indicators">
                     <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -162,10 +162,10 @@
             </div>
         </div>
         <!-- Services sminka -->
-        <div id="sminka" class="my-5 py-5">
-            <div class="row justify-content-center pt-xl-5 pb-4 mt-2">
+        <div class="my-5 py-5">
+            <div class="row justify-content-center pb-4">
                <div class="col-md-8 text-center">
-                    <h1 class="mb-3 mt-5">Professional makeup</h1>
+                    <h1 class="mb-3" id="sminka">Professional makeup</h1>
                     <p>Are you getting ready for one of the most important days of your life? Whether you're going to a prom, graduation, bachelorette party or it's time to say the big YES - <em>Pretty Woman</em> gots you covered. We offer you professional makeup service for all events, because you really don't want to experiment on such important occasion.</p>
                 </div>
             </div>
@@ -199,13 +199,13 @@
             </div>
         </div>
         <!-- Contact -->
-        <div id="contact" class="my-5 py-5" style="background-color: #f9f1eb">
+        <div class="my-5 py-5" style="background-color: #f9f1eb">
             <div class="row justify-content-center">
-                <div class="col-lg-12 text-center mb-5 pb-3">
-                    <h1>Contact</h1>
+                <div class="col-lg-12 text-center mb-5">
+                    <h1 id="contact">Contact</h1>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-5">
                 <div class="col-md-3 text-center mr-md-5">
                     <img src="img/radica2.png" alt="radica" class="img-responsive mb-5">
                 </div>
@@ -257,7 +257,7 @@
     <footer class="container-fluid mb-3">
         <div class="row mb-2">
             <div class="col-md-12 text-right">
-                <a href="humans.txt" class="btn btn-outline-secondary mr-5" role="button" style="background-color: #f9f1eb">Humans</a>
+                <a href="humans.txt" class="btn btn-outline-secondary mr-5" role="button" style="background-color: #f9f1eb" target="_blank">Humans</a>
             </div>
         </div>
         <div class="row">

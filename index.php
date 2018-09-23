@@ -25,7 +25,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center mr-5" id="colapseNav">
             <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="#about" class="nav-link text-secondary">O nama</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-secondary" >O nama</a></li>
                 <li class="nav-item"><a href="#frizure" class="nav-link text-secondary">Frizure</a></li>
                 <li class="nav-item"><a href="#sminka" class="nav-link text-secondary">Šminka</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link text-secondary">Kontakt</a></li>
@@ -40,20 +40,20 @@
            </div>
        </div>
     </div>
-   <div class="container-fluid my-5 pt-2" id="headImg">
    <!--Header Img -->
-    <div class="row justify-content-center my-5 pb-5">
-        <div class="col-md-12 text-center">
-            <img src="img/head-img.jpg" alt="hairstyle" class="img-fluid mt-5">
+   <div class="container-fluid my-5 pt-2" id="headImg">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 text-center">
+                <img src="img/head-img.jpg" alt="hairstyle" class="img-fluid mt-5">
+            </div>
         </div>
-    </div>
     </div>
     <div class="container">
         <!-- About -->
-        <div class="my-5 py-5" id="about" style="background-color: #f9f1eb">
-            <div class="row justify-content-center mt-4">
+        <div class="my-5 py-5" style="background-color: #f9f1eb">
+            <div class="row justify-content-center mt-4 mb-5">
                <div class="col-md-12 text-center mb-3">
-                    <h1>O nama</h1>
+                    <h1 id="about">O nama</h1>
                </div>
                 <div class="col-md-5 text-center mr-md-3">
                     <img src="img/about_us.jpg" alt="tools" class="img-fluid mb-4">
@@ -64,10 +64,10 @@
             </div>
         </div>
         <!-- Services frizure-->
-        <div id="frizure" class="my-5 py-5">
-            <div class="row justify-content-center pt-5 mt-5 pb-4">
+        <div class="my-5 py-5">
+            <div class="row justify-content-center pb-4">
                <div class="col-xl-5 text-center mr-xl-3">
-                  <h1 class="my-3">Frizerske usluge</h1>
+                  <h1 class="my-3" id="frizure">Frizerske usluge</h1>
                    <p class="mb-4">U salonu <em>Pretty Woman</em> nudimo niz usluga koje mogu zadovoljiti vaše frizerske potrebe. Bilo da su u pitanju frizure za svečane prilike ili manifestacije, farbanje ili jednostavno šišanje, <em>Pretty Woman</em> je pravo mesto za vas.</p>
                 </div>
                <div class="col-xl-6 ml-xl-3">
@@ -81,7 +81,7 @@
                             <li>Ombre</li>
                             <li>Sombre</li>
                        </ul>
-                        <ul class="list-unstyled  col-4">
+                        <ul class="list-unstyled col-4">
                             <li>Slicing</li>
                             <li>Bebi pramenovi</li>
                             <li>Chunky pramenovi</li>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center" style="background-color: #f9f1eb">
+            <div class="row justify-content-center mb-5" style="background-color: #f9f1eb">
                 <div id="slider" class="carousel slide col-md-8" data-ride="carousel">
                   <ul class="carousel-indicators">
                     <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -162,10 +162,10 @@
             </div>
         </div>
         <!-- Services sminka -->
-        <div id="sminka" class="my-5 py-5">
-            <div class="row justify-content-center pt-xl-5 pb-4 mt-2">
+        <div class="my-5 py-5">
+            <div class="row justify-content-center pb-4">
                <div class="col-md-8 text-center">
-                    <h1 class="mb-3 mt-5">Profesionalna šminka</h1>
+                    <h1 class="mb-3" id="sminka">Profesionalna šminka</h1>
                     <p>Spremate se za jedan od najvažnijih dana u vašem životu? Bilo da je pred vama matura, apsolventsko veče, devojačko veče, rođendan ili je vreme da izgovorite svoje sudbonosno DA - <em>Pretty Woman</em> pruža uslugu profesionalnog šminkanja za sve prilike jer vreme važnog događaja nije za eksperimentisanje.</p>
                 </div>
             </div>
@@ -199,13 +199,13 @@
             </div>
         </div>
         <!-- Contact -->
-        <div id="contact" class="my-5 py-5" style="background-color: #f9f1eb">
+        <div class="my-5 py-5" style="background-color: #f9f1eb">
             <div class="row justify-content-center">
-                <div class="col-lg-12 text-center mb-5 pb-3">
-                    <h1>Kontakt</h1>
+                <div class="col-lg-12 text-center mb-5">
+                    <h1 id="contact">Kontakt</h1>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-5">
                 <div class="col-md-3 text-center mr-md-5">
                     <img src="img/radica2.png" alt="radica" class="img-responsive mb-5">
                 </div>
@@ -257,7 +257,7 @@
     <footer class="container-fluid mb-3">
         <div class="row mb-2">
             <div class="col-md-12 text-right">
-                <a href="humans.txt" class="btn btn-outline-secondary mr-5" role="button" style="background-color: #f9f1eb">Humans</a>
+                <a href="humans.txt" class="btn btn-outline-secondary mr-5" role="button" style="background-color: #f9f1eb" target="_blank">Humans</a>
             </div>
         </div>
         <div class="row">
