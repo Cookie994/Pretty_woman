@@ -2,5 +2,5 @@
 Pretty Woman website
 
 First website that we've built for a client.<br>
-Tehnologies used: Bootstrap 4, HTML5, CSS3, PHP (for contact form) and a little bit of JavaScript for smooth scroll.<br>
+Technologies used: Bootstrap 4, HTML5, CSS3, PHP (for contact form) and a little bit of JavaScript for smooth scroll.<br>
 Take a look and tell us what you think. Thank you!<br>
