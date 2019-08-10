@@ -6,61 +6,52 @@
     require 'src/PHPMailer.php';
     require 'src/SMTP.php';
     
+        $errors = "";
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = trim(filter_var($_REQUEST['name'], FILTER_SANITIZE_STRING));
+            $ename = trim(filter_var($_REQUEST['email'], FILTER_SANITIZE_EMAIL));
+            $email = filter_var($ename, FILTER_VALIDATE_EMAIL);
+            $subject = trim(filter_var($_REQUEST['subject'], FILTER_SANITIZE_STRING));
+            $message = trim(filter_var($_REQUEST['message'], FILTER_SANITIZE_STRING));
+            
+            if(empty($name) && empty($email)) {
+                $errors = "You must enter your name and email address";
+            }
+            
+            if($errors == ""){
+                $mail = new PHPMailer(true);
+                try {
+                    //Server settings
+                    $mail->SMTPDebug = 0;
+                    $mail->isSMTP(); 
+                    $mail->Host = 'smtp.host.net';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'username';
+                    $mail->Password = 'password';
+                    $mail->SMTPSecure = 'ssl';
+                    $mail->Port = 465;
+
+                    //Recipients
+                    $mail->setFrom('sender@mail.com');
+                    $mail->addAddress('recipient@mail.com');
+
+                    //Content
+                    $mail->isHTML(false);          
+                    $mail->Subject = "Website Kontakt Forma od: $name";
+                    $mail->Body    = "Dobili ste poruku putem kontakt forme sa prettywoman.rs website-a.\n\n"."Evo detalja:\n\nIme: $name\n\nEmail: $email\n\nNaslov: $subject\n\nPoruka: $message";
+
+                    $mail->send();
+                    echo 'Message has been sent';
+                    header("Location: ../thank_you.php");
+                    } catch (Exception $e) {
+                        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                }
+
+            } else {
+                echo $errors;
+                
+            }
+            
+        }
         
-        $name = $email = $subject = $message = "";
-        $nameErr = $emailErr = "";
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if (empty($_POST["name"])) {
-                $nameErr = "Enter name";
-            } else {
-                $name = test_input($_POST["name"]);
-            if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-                $nameErr = "Only letters and white space allowed"; 
-            } 
-            }
-            if (empty($_POST["email"])) {
-                $emailErr = "Enter email";
-            } else {
-                $email = test_input($_POST["email"]);
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailErr = "Invalid email format"; 
-            }
-            }
-            $subject = test_input($_POST["subject"]);
-            $message = test_input($_POST["message"]);
-            header("Location: ../thank_you.php");
-        }
-            function test_input($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-    $mail = new PHPMailer(true);
-        try {
-            //Server settings
-            $mail->SMTPDebug = 2;
-            $mail->isSMTP(); 
-            $mail->Host = 'mmail.domain.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'username@domain.com';
-            $mail->Password = 'password';
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port = 465;
-
-            //Recipients
-            $mail->setFrom('test@test.com', 'no-reply');
-            $mail->addAddress('test@test.com');
-
-            //Content
-            $mail->isHTML(false);          
-            $mail->Subject = "Website Kontakt Forma od: $name";
-            $mail->Body    = "Dobili ste poruku putem kontakt forme sa prettywoman.rs website-a.\n\n"."Evo detalja:\n\nIme: $name\n\nEmail: $email\n\nNaslov: $subject\n\nPoruka: $message";
-
-            $mail->send();
-            echo 'Message has been sent';
-            } catch (Exception $e) {
-                echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-        }
-
     ?>
