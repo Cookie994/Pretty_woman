@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="keywords" content="Radica, Pretty Woman, Frizure, Sminka, Salon, Salon lepote">
+    <meta name="keywords" content="Radica, Pretty Woman, Frizure, Sminka, Salon, Salon lepote, Frizerske usluge, Nadogradnja kose, Pletenice, Profesionalna sminka, Zenski frizer">
+    <meta name="description" content="U salonu Pretty Woman uvek će vas dočekati profesionalni frizer i šminker sa iskustvom od 15 godina rada. Nudimo niz usluga koje mogu zadovoljiti vaše frizerske potrebe. Bilo da su u pitanju frizure za svečane prilike ili manifestacije, farbanje ili jednostavno šišanje, Pretty Woman je pravo mesto za vas.">
+    <meta name="robots" content="noindex">
     <meta name="author" content="Web Development & Design: Andrea Maric, Web & Graphic Design: Stefan Vujanic">
     <link type="text/plain" rel="author" href="humans.txt">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,31 +14,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body class="bg-light">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-light mb-5"
-    style="background-color: #f9f1eb; border-bottom: 1px solid rgb(211, 211, 211);
-    border-top: 1px solid rgb(211, 211, 211);">
-       <a class="navbar-brand" href="index_en.php"><img src="img/en.png" alt="enIcon" class="w-50"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapseNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="colapseNav">
-            <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="#about" class="nav-link text-secondary">O nama</a></li>
-                <li class="nav-item"><a href="#frizure" class="nav-link text-secondary">Frizure</a></li>
-                <li class="nav-item"><a href="#sminka" class="nav-link text-secondary">Šminka</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link text-secondary">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
     <!-- Logo -->
     <div class="container-fluid mt-5 py-4 fixed-top bg-light" id="logo">
        <div class="row justify-content-center">
            <div class="col-md-10 text-center">
-                <a href="index.php"><img src="img/logo4.png" class="img-responsive w-25"></a>
+                <a href="index.php"><img src="img/logo4.png" alt="logo, pretty woman" class="img-responsive w-25"></a>
            </div>
        </div>
     </div>
